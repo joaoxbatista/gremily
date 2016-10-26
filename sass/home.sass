@@ -1,0 +1,47 @@
+@import ../libs/bootstrap/stylesheets/bootstrap/variables
+@import ../libs/bootstrap/stylesheets/bootstrap/mixins
+@import components/colors
+
+header
+	background: $green
+	padding: 20px 0px
+	border-bottom: 2px solid $gray
+	height: 300px
+	.menu
+		@include make-md-column(9)
+		padding: 0px
+		
+
+		nav
+			ul
+				list-style: none
+				margin: 0px
+				padding: 0px
+				li 
+					float: left
+					min-width: 100px
+					text-align: center
+					margin-left: 20px
+					padding: 10px 0px
+					&:first-of-type
+						margin-left: 0px
+					a
+						width: 100%
+						display: block
+						color: $white
+					
+	.search-bar
+		@include make-md-column(3)
+
+.about
+	.content-left
+		@include make-md-column(6)
+		margin-left: -15px
+		padding-left: 0px
+
+	.content-right
+
+		@include make-md-column(6)
+		margin-left: 0px
+		padding-left: 0px
+x
