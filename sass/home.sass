@@ -3,6 +3,9 @@
 @import components/colors
 @import components/buttons
 
+::-webkit-input-placeholder
+	color: $verde_claro
+
 header
 	background: $verde_claro
 	padding: 20px 0px
@@ -78,6 +81,7 @@ header
 		@include make-md-column(3)
 		@include make-md-column-offset(1)
 		margin-top: 120px
+
 .banner
 	min-height: 350px
 	background: url(../images/banner.jpg) center center no-repeat
@@ -96,3 +100,37 @@ header
 		margin-left: 150px
 		padding-bottom: 30px
 		text-shadow: 3px 3px rgba(0, 0, 0, .4)
+
+.contact
+	min-height: 350px
+	background: $verde_claro
+	border-bottom: 6px solid $branco
+
+	.container-fluid 
+		width: 100%
+
+	.content-left
+		@include make-md-column(5)
+		
+		margin-top: 50px
+		h1
+			color: $verde_escuro
+			font-size: 35px
+		.form-control
+			background: $verde_escuro
+			color: $verde_claro
+			border: none
+			border-radius: 30px
+			margin-bottom: 5px
+
+
+	.content-right
+		@include make-md-column(6)
+		@include make-md-column-offset(1)
+		margin: 0
+		padding: 0
+
+		img
+			margin-right: -15px
+			float: right
+
