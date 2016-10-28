@@ -9,7 +9,6 @@
 header
 	background: $verde_claro
 	padding: 20px 0px
-	border-bottom: 2px solid $gray
 	height: 300px
 	.menu
 		@include make-md-column(9)
@@ -83,6 +82,7 @@ header
 		margin-top: 120px
 
 .banner
+	border-bottom: 6px solid $branco
 	min-height: 350px
 	background: url(../images/banner.jpg) center center no-repeat
 	background-attachment: fixed
@@ -102,9 +102,9 @@ header
 		text-shadow: 3px 3px rgba(0, 0, 0, .4)
 
 .contact
+	border-bottom: 6px solid $branco
 	min-height: 350px
 	background: $verde_claro
-	border-bottom: 6px solid $branco
 
 	.container-fluid 
 		width: 100%
@@ -122,7 +122,8 @@ header
 			border: none
 			border-radius: 30px
 			margin-bottom: 5px
-
+		.btn-default
+			margin-top: 10px
 
 	.content-right
 		@include make-md-column(6)
@@ -134,3 +135,48 @@ header
 			margin-right: -15px
 			float: right
 
+footer
+	background: $cinza
+	color: $branco
+	padding: 20px 0px
+	.content-one
+		@include make-md-column(4)
+
+		h1
+			border-bottom: 3px solid $verde_claro
+
+		ul
+			list-style: none
+			margin: 10px
+			padding: 0
+			
+			li
+				margin: 0
+				padding: 5px 0px
+				
+				a
+					color: $branco
+					text-decoration: none
+
+	
+	.content-two
+		@include make-md-column(4)
+
+		h1
+			border-bottom: 3px solid $verde_claro
+
+		ul
+			list-style: none
+			margin: 10px
+			padding: 0
+			
+			li
+				margin: 0
+				padding: 5px 0px
+				
+				a
+					color: $branco
+					text-decoration: none
+	
+	.content-three
+		@include make-md-column(4)
