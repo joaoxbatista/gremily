@@ -1,0 +1,72 @@
+@import ../libs/bootstrap/stylesheets/bootstrap/variables
+@import ../libs/bootstrap/stylesheets/bootstrap/mixins
+@import components/colors
+@import components/buttons
+    
+.anuncio
+    
+    background: url(../images/header.png), linear-gradient($verde-claro, $verde_claro)
+    background-size: cover
+    background-repeat: center center no-repeat
+    width: 100%
+    min-height: 460px
+    color: $branco
+    
+    img
+        display: block
+        margin: 0 auto
+    
+    
+    h1, h2
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .4)
+        text-align: center
+    h1
+        font-size: 3.5em
+    
+    h2
+        font-size: 3.7em
+        margin-top: -10px
+
+.requisitos
+    
+    padding: 50px 0px
+    
+    h1
+        color: $verde_escuro
+        font-weight: bold
+        
+    ul
+        margin: 0
+        padding: 0
+        li
+            list-style: none
+            margin-top: 40px
+            
+            &::before
+                content: url(../images/bullet.png)
+                display: inline
+                float: left
+                padding: 10px
+.selecao
+    
+    padding: 50px 0px 
+    min-height: 480px
+    background: linear-gradient(rgba(0, 0, 0, .5), $verde_claro), url(../images/form-background.jpg)
+    background-size: cover
+    background-repeat: no-repeat
+    background-attachment: fixed
+    
+    h1
+        color: $branco
+        font-weight: bold
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, .4)
+    
+    .form-control
+       
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .2)
+        border-radius: 50px
+        border: none
+        padding: 10px 20px
+        margin-bottom: 20px
+        color: $verde-escuro
+    
